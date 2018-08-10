@@ -1,0 +1,1 @@
+collection of scripts to add more functionality into the base cloud9 instance on AWS and set some defaults

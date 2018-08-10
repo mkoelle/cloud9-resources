@@ -1,4 +1,4 @@
-#bash
+#!/bin/bash
 
 ### Based on the folowing resources:
 ### https://mockingbot.com/posts/run-puppeteer-chrome-headless-on-ec2-amazon-linux

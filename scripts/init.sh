@@ -1,4 +1,4 @@
-#bash
+#!/bin/bash
 
 # update node
 nvm install node
@@ -10,5 +10,5 @@ npm install -g npm
 # install c9 comand line interface
 npm install -g c9
 
-.enablechromium.sh
-.enabledotnetcore.sh
+bash enablechromium.sh
+bash enabledotnetcore.sh

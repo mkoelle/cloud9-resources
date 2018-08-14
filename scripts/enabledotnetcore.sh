@@ -14,3 +14,5 @@ mkdir -p $HOME/dotnet
 tar zxf dotnet-sdk-2.1.200-linux-x64.tar.gz -C $HOME/dotnet
 
 rm -f dotnet-sdk-2.1.200-linux-x64.tar.gz
+
+dotnet new -i Amazon.Lambda.Templates::*

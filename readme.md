@@ -14,3 +14,7 @@ Downloading the folder of scripts and executing the init.sh should
 Cloud formation templates for recreating the c9 environment
 
 [AWS cloudformation for C9](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html)
+
+
+### TODO
+check if things exist and dont reinstall them

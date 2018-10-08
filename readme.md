@@ -17,4 +17,7 @@ Cloud formation templates for recreating the c9 environment
 
 
 ### TODO
-check if things exist and dont reinstall them
+* check if things exist and dont reinstall them
+* add git-flow cli helper
+* add saml2aws-auto
+* consider adding symlinks and paths for nested root project folders https://stackoverflow.com/a/676753

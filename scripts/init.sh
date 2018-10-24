@@ -20,15 +20,15 @@ echo -e "${LGREEN}Installing${CYAN} C9-cli${NC}"
 npm install -g c9
 
 echo -e "${LGREEN}Installing${CYAN} Chromium${NC}"
-bash enablechromium.sh
+bash toolchain/chromium.sh
 
 echo -e "${LGREEN}Installing${CYAN} DotNetCore${NC}"
-bash enabledotnetcore.sh
+bash toolchain/dotnetcore.sh
 
 echo -e "${LGREEN}Installing${CYAN} Golang${NC}"
-bash enableGolang.sh
+bash toolchain/golang.sh
 
 echo -e "${LGREEN}Configuring${CYAN} Python3${NC}"
-bash enablePython3.sh
+bash toolchain/python3.sh
 
 echo -e "${LPURPLE}Done! ${LGREEN}Your cloud-9 instance is now fully Powered! ${NC}"

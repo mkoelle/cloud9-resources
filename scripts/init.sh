@@ -2,7 +2,9 @@
 . ./colors.sh
 
 echo -e "${LGREEN}Installing${CYAN} NPM${NC}"
+npm --version
 npm install -g npm
+npm --version
 
 echo -e "${LGREEN}Installing${CYAN} NVM${NC}"
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
@@ -11,6 +13,7 @@ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh |
 echo -e "${LGREEN}Updating${CYAN} Node${NC}"
 nvm install node
 nvm alias default stable
+node --version
 
 echo -e "${LGREEN}Installing${CYAN} C9-cli${NC}"
 npm install -g c9

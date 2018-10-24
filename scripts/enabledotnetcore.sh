@@ -1,5 +1,5 @@
 #!/bin/bash
-
+. ./file_append.sh
 
 ### resources:
 ### https://blog.todotnet.com/2017/06/building-net-core-apps-on-cloud9/
@@ -15,7 +15,7 @@ tar zxf dotnet-sdk-2.1.400-linux-x64.tar.gz -C $HOME/dotnet
 
 rm -f dotnet-sdk-2.1.400-linux-x64.tar.gz
 
+file_append 'PATH=$PATH:$HOME/.local/bin:$HOME/bin:$HOME/dotnet' ~/.bash_profile
+. ~/.bash_profile
+
 dotnet --info
-# dotnet new -i Amazon.Lambda.Templates::*
-# TODO: fix the error below
-# enabledotnetcore.sh: line 18: dotnet: command not found

@@ -1,22 +1,15 @@
 #!/bin/bash
+. ./colors.sh
 
-## https://gist.github.com/sharma7n/bd563ff81996d436f5899e616ce6fce7
+# https://docs.aws.amazon.com/cloud9/latest/user-guide/sample-python.html
 
-# installation instructions:
-# copy lines to file called py36.sh
-# bash py36.sh
+echo -e "${LPURPLE}Current Python Version:"; python --version; echo -e "${NC}"
+echo -e "${LPURPLE}Current Pip Version:"; pip --version; echo -e "${NC}"
 
-sudo apt-get update
-sudo apt-get install python3.6 python3.6-venv -y
-sudo python3.6 -m ensurepip --upgrade
-pip3 install --user pipenv
-echo 'export PYTHON_BIN_PATH="$(python3 -m site --user-base)/bin"' >> ~/.profile 
-echo 'export PATH="$PATH:$PYTHON_BIN_PATH"' >> ~/.profile 
-source ~/.profile
+sudo update-alternatives --set python '/usr/bin/python3.6'
 
+# refresh environment variables in script
+set -a; source /etc/environment; set +a;
 
-# first try
-# sudo yum install python3-setuptools
-# sudo yum install python36-setuptools
-# sudo python3 /usr/lib/python3.6/dist-packages/easy_install.py pip
-# pip install --upgrade pip 
+echo -e "${LPURPLE}New Python Version:"; python --version; echo -e "${NC}"
+echo -e "${LPURPLE}New Pip Version:"; pip --version; echo -e "${NC}"

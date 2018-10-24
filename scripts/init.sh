@@ -1,11 +1,9 @@
 #!/bin/bash
 . ./colors.sh
 
-# update npm
 echo -e "${LGREEN}Installing${CYAN} NPM${NC}"
 npm install -g npm
 
-# update node
 echo -e "${LGREEN}Installing${CYAN} NVM${NC}"
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 . ~/.bash_profile
@@ -14,7 +12,6 @@ echo -e "${LGREEN}Updating${CYAN} Node${NC}"
 nvm install node
 nvm alias default stable
 
-# install c9 comand line interface
 echo -e "${LGREEN}Installing${CYAN} C9-cli${NC}"
 npm install -g c9
 

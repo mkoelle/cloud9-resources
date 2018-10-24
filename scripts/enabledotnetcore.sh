@@ -15,4 +15,7 @@ tar zxf dotnet-sdk-2.1.400-linux-x64.tar.gz -C $HOME/dotnet
 
 rm -f dotnet-sdk-2.1.400-linux-x64.tar.gz
 
-dotnet new -i Amazon.Lambda.Templates::*
+dotnet --info
+# dotnet new -i Amazon.Lambda.Templates::*
+# TODO: fix the error below
+# enabledotnetcore.sh: line 18: dotnet: command not found

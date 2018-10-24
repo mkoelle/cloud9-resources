@@ -5,7 +5,7 @@
 ### https://github.com/kazuma1989/headless-chrome-cloud9-handson/blob/master/install-chrome-dependencies.sh
 ### https://gist.github.com/kazuma1989/2ca904e3e82cce9079466318aa44a94b
 
-sudo yum install cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango
+sudo yum install -y cups-libs dbus-glib libXrandr libXcursor libXinerama cairo cairo-gobject pango
 # Install ATK from CentOS 7
 sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/atk-2.22.0-3.el7.x86_64.rpm
 sudo rpm -ivh --nodeps http://mirror.centos.org/centos/7/os/x86_64/Packages/at-spi2-atk-2.22.0-2.el7.x86_64.rpm

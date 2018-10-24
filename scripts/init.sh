@@ -25,5 +25,7 @@ bash enablechromium.sh
 echo -e "${LGREEN}Installing${CYAN} DotNetCore${NC}"
 bash enabledotnetcore.sh
 
+echo -e "${LGREEN}Installing${CYAN} Golang${NC}"
+bash enableGolang.sh
 
 echo -e "${LPURPLE}Done! ${LGREEN}Your cloud-9 instance is now fully Powered! ${NC}"

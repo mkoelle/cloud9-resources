@@ -7,12 +7,14 @@
 echo -e "${LPURPLE}Current Python Version:"; python --version; echo -e "${NC}"
 echo -e "${LPURPLE}Current Pip Version:"; pip --version; echo -e "${NC}"
 
-sudo yum install python3.6 python3.6-venv -y
-sudo python3 -m ensurepip --upgrade
+# update pip
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+sudo python3 get-pip.py
+rm get-pip.py
 
 sudo update-alternatives --set python '/usr/bin/python3.6'
 
-python3 -m pip install pipenv
+sudo python3 -m pip install pipenv
 
 file_append 'alias pip3="python3 -m pip"' ~/.bashrc
 

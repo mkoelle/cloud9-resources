@@ -1,0 +1,11 @@
+--2018-10-25 12:26:51--  https://download.visualstudio.microsoft.com/download/pr/e85de743-f80b-481b-b10e-d2e37f05a7ce/0bf3ff93417e19ad8d6b2d3ded84d664/dotnet-sdk-2.1.403-linux-x64.tar.gz
+Resolving download.visualstudio.microsoft.com (download.visualstudio.microsoft.com)... 68.232.34.200, 2606:2800:133:f17:19e8:2356:251b:2a9
+Connecting to download.visualstudio.microsoft.com (download.visualstudio.microsoft.com)|68.232.34.200|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 163502295 (156M) [application/octet-stream]
+Saving to: ‘dotnet-sdk-2.1.403-linux-x64.tar.gz’
+
+dotnet-sdk-2.1.403-linux-x64.tar.gz    73%[===================================================>                   ] 114.93M  41.0MB/s               dotnet-sdk-2.1.403-linux-x64.tar.gz    78%[======================================================>                ] 122.46M  40.8MB/s    eta 1s     dotnet-sdk-2.1.403-linux-x64.tar.gz    84%[==========================================================>            ] 131.52M  41.7MB/s    eta 1s     dotnet-sdk-2.1.403-linux-x64.tar.gz    89%[==============================================================>        ] 140.29M  42.3MB/s    eta 1s     dotnet-sdk-2.1.403-linux-x64.tar.gz    95%[==================================================================>    ] 148.82M  42.4MB/s    eta 1s     dotnet-sdk-2.1.403-linux-x64.tar.gz   100%[======================================================================>] 155.93M  42.6MB/s    in 3.8s    
+
+2018-10-25 12:26:55 (41.5 MB/s) - ‘dotnet-sdk-2.1.403-linux-x64.tar.gz’ saved [163502295/163502295]
+

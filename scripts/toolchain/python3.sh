@@ -12,10 +12,18 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 sudo python3 get-pip.py
 rm get-pip.py
 
+# set system to default to python3
 sudo update-alternatives --set python '/usr/bin/python3.6'
 
-sudo python3 -m pip install pipenv
+# install pipenv
+python3 -m pip install pipenv --user
 
+# install virtualenvwrapper
+python3 -m pip install virtualenvwrapper --user
+file_append 'export WORKON_HOME=~/Envs' ~/.bashrc
+file_append 'source /usr/local/bin/virtualenvwrapper.sh' ~/.bashrc
+
+# create alias for pip3
 file_append 'alias pip3="python3 -m pip"' ~/.bashrc
 
 # refresh environment variables in script

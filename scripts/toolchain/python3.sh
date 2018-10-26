@@ -21,7 +21,7 @@ python3 -m pip install pipenv --user
 # install virtualenvwrapper
 python3 -m pip install virtualenvwrapper --user
 file_append 'export WORKON_HOME=~/Envs' ~/.bashrc
-file_append 'source /usr/local/bin/virtualenvwrapper.sh' ~/.bashrc
+file_append 'source $HOME/.local/bin/virtualenvwrapper.sh' ~/.bashrc
 
 # create alias for pip3
 file_append 'alias pip3="python3 -m pip"' ~/.bashrc

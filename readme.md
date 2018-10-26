@@ -4,18 +4,29 @@
 
 Collection of scripts to add more functionality into the base cloud9 instance on AWS and set some defaults
 
-Executing the init.sh should
+Executing the init.sh should:
 
 * Update node
     * Also installs nvm (hardcoded to v0.33.11)
 * Update npm
 * Install cloud9 cli
 * Install the .NET core SDK (hardcoded to v2.1.403)
-* Install dependencies for Chromium (hardcoded to a several packages and versions)
+* Install dependencies for Chromium (hardcoded to several packages and versions)
 * Update python3
     * Also updates pip
     * Also installs pipenv
+    * Also installs virtualenvwrapper
 * Update golang (hardcoded to v1.11.1)
+
+You will have to set the init.sh file to executable before running.
+
+```bash
+cd scripts
+chmod +x ./init.sh
+./init.sh
+```
+
+Alternativley each of the toolchain scripts is capable of being executed on its own, independently of the other scripts.
 
 ## Templates
 

@@ -11,10 +11,11 @@ Executing the init.sh should
 * Update npm
 * Install cloud9 cli
 * Install the .NET core SDK (hardcoded to v2.1.403)
-* Install dependencies for Chromium (hardcoded to a several packages and versions)
+* Install dependencies for Chromium (hardcoded to several packages and versions)
 * Update python3
     * Also updates pip
     * Also installs pipenv
+    * Also installs virtualenvwrapper
 * Update golang (hardcoded to v1.11.1)
 
 ## Templates

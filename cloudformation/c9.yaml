@@ -1,13 +1,5 @@
-Type: AWS::Cloud9::EnvironmentEC2
-Properties:
-  Repositories: 
-    - cloud9-resources
-  OwnerArn: String
-  Description: String
-  AutomaticStopTimeMinutes: Integer
-  InstanceType: String
-  Name: String
-  SubnetId: String
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A Cloud9 Environment for Basic Development
   
 Parameters:
   EC2InstanceType:
@@ -22,7 +14,7 @@ Parameters:
     Description: SubnetId
     Type: AWS::EC2::Subnet::Id
 Resources:
-  IDE:
+  C9Environment:
     Type: AWS::Cloud9::EnvironmentEC2
     Properties:
       Repositories:
@@ -43,5 +35,5 @@ Outputs:
       Fn::Join:
       - ''
       - - https://console.aws.amazon.com/cloud9/home/environments/
-        - Ref: IDE
+        - Ref: C9Environment
     Description: Cloud9 environment
